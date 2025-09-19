@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["vite/client"],
+
+    "outDir": "./node_modules/.tmp/tsc/app"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
